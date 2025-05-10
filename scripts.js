@@ -16,6 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // FAQ accordion
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      // Close other open items
+      faqItems.forEach((otherItem) => {
+        if (otherItem !== item && otherItem.classList.contains("active")) {
+          otherItem.classList.remove("active");
+        }
+      });
+
+      // Toggle current item
+      item.classList.toggle("active");
+    });
+  });
+
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -40,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Newsletter form submission
-  const newsletterForm = document.querySelector(".newsletter form");
+  const newsletterForm = document.querySelector(".footer-newsletter form");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -50,21 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Search form submission
-  const searchForm = document.querySelector(".search-form");
-  if (searchForm) {
-    searchForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const searchInput = this.querySelector('input[type="text"]');
-      alert(`Searching for: ${searchInput.value}`);
-      searchInput.value = "";
-    });
-  }
-
-  // Animate elements on scroll
+  // Add animation to elements when they scroll into view
   const animateOnScroll = () => {
     const elements = document.querySelectorAll(
-      ".post-card, .post, .sidebar-widget"
+      ".feature-card, .pricing-card, .testimonial-card"
     );
 
     elements.forEach((element, index) => {
@@ -82,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Set initial state for animated elements
   document
-    .querySelectorAll(".post-card, .post, .sidebar-widget")
+    .querySelectorAll(".feature-card, .pricing-card, .testimonial-card")
     .forEach((el) => {
       el.style.opacity = "0";
       el.style.transform = "translateY(20px)";
