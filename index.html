@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Blog | Latest Articles</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Blog<span>Hub</span></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="btn-subscribe">Subscribe</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Discover Amazing Content</h1>
+          <p>Read the latest articles on technology, design, and more</p>
+          <form class="search-form">
+            <input type="text" placeholder="Search articles..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Posts -->
+    <section class="featured-posts">
+      <div class="container">
+        <h2>Featured Articles</h2>
+        <div class="posts-grid">
+          <article class="post-card featured">
+            <div class="post-image">
+              <img src="images/blog-post1.jpg" alt="Web Design Trends" />
+              <span class="category-tag">Design</span>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <img
+                  src="images/author-avatar.jpg"
+                  alt="Author"
+                  class="author-avatar"
+                />
+                <span class="author-name">Jane Doe</span>
+                <span class="post-date">May 15, 2023</span>
+              </div>
+              <h3><a href="#">Top Web Design Trends for 2023</a></h3>
+              <p>
+                Explore the latest design trends that will dominate the web this
+                year...
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-image">
+              <img src="images/blog-post2.jpg" alt="JavaScript Tips" />
+              <span class="category-tag">Development</span>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <img
+                  src="images/author-avatar.jpg"
+                  alt="Author"
+                  class="author-avatar"
+                />
+                <span class="author-name">John Smith</span>
+                <span class="post-date">May 10, 2023</span>
+              </div>
+              <h3><a href="#">10 JavaScript Tips You Should Know</a></h3>
+              <p>
+                Improve your JavaScript skills with these essential tips and
+                tricks...
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regular Posts -->
+    <section class="regular-posts">
+      <div class="container">
+        <div class="sidebar-layout">
+          <main class="posts-list">
+            <h2>Latest Articles</h2>
+            <article class="post">
+              <div class="post-thumbnail">
+                <img src="images/blog-post1.jpg" alt="Post thumbnail" />
+              </div>
+              <div class="post-details">
+                <span class="category">Technology</span>
+                <h3><a href="#">How AI is Changing Web Development</a></h3>
+                <p class="excerpt">
+                  Artificial intelligence is transforming how we build websites
+                  and applications...
+                </p>
+                <div class="post-footer">
+                  <div class="author-info">
+                    <img src="images/author-avatar.jpg" alt="Author" />
+                    <span>Sarah Johnson</span>
+                  </div>
+                  <span class="read-time">5 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="post-thumbnail">
+                <img src="images/blog-post2.jpg" alt="Post thumbnail" />
+              </div>
+              <div class="post-details">
+                <span class="category">Productivity</span>
+                <h3><a href="#">10 Tools to Boost Your Productivity</a></h3>
+                <p class="excerpt">
+                  Discover the best tools that will help you get more done in
+                  less time...
+                </p>
+                <div class="post-footer">
+                  <div class="author-info">
+                    <img src="images/author-avatar.jpg" alt="Author" />
+                    <span>Mike Peterson</span>
+                  </div>
+                  <span class="read-time">7 min read</span>
+                </div>
+              </div>
+            </article>
+          </main>
+
+          <aside class="sidebar">
+            <div class="sidebar-widget">
+              <h3>About Me</h3>
+              <div class="about-author">
+                <img src="images/author-avatar.jpg" alt="Author" />
+                <p>
+                  Hi, I'm Alex. I write about web development, design, and
+                  technology trends.
+                </p>
+              </div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Categories</h3>
+              <ul class="categories">
+                <li>
+                  <a href="#">Technology <span>12</span></a>
+                </li>
+                <li>
+                  <a href="#">Design <span>8</span></a>
+                </li>
+                <li>
+                  <a href="#">Development <span>15</span></a>
+                </li>
+                <li>
+                  <a href="#">Productivity <span>5</span></a>
+                </li>
+                <li>
+                  <a href="#">Tips & Tricks <span>9</span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget newsletter">
+              <h3>Newsletter</h3>
+              <p>Subscribe to get the latest posts delivered to your inbox</p>
+              <form>
+                <input type="email" placeholder="Your email address" />
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <a href="#" class="logo">Blog<span>Hub</span></a>
+            <p>A modern blog about technology, design, and development.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Productivity</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 BlogHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
